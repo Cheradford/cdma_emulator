@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDMA Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="inputs">
+            <h3>Кодируемые слова</h3>
+            <div>
+                <label for="word1">Слово 1: </label>
+                <input type="text" id="word1" value="GOD">
+            </div>
+            <div>
+                <label for="word2">Слово 2: </label>
+                <input type="text" id="word2" value="CAT">
+            </div>
+            <div>
+                <label for="word3">Слово 3: </label>
+                <input type="text" id="word3" value="HAM">
+            </div>
+            <div>
+                <label for="word4">Слово 4: </label>
+                <input type="text" id="word4" value="SUN">
+            </div>
+        </div>
+
+        <div id="chartContainer">
+            <canvas id="myChart" height="50%"></canvas>
+        </div>
+        
+
+        <h3>Раскодированные</h3>
+        <div>
+            <p>Слово 1: <span id="decoded1"></span></p>
+            <p>Слово 2: <span id="decoded2"></span></p>
+            <p>Слово 3: <span id="decoded3"></span></p>
+            <p>Слово 4: <span id="decoded4"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
